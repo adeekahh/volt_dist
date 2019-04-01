@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overscroll-behavior: none;
+  scroll-snap-type: y mandatory;
+}
+div,
+section {
+  scroll-snap-align: start;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  background: #c4d600;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 2em;
+}
+
+button:hover,
+button:focus {
+  background: #0053ba;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.landing-screen-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.landing-screen-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.landing-phone-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  filter: none;
+  margin-top: 182px;
+}
+
+.landing-phone-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+}
+
+/*BATTERY*/
+
+.battery {
+  border: 3px solid #333;
+  width: 65px;
+  height: 125px;
+  padding: 2px;
+  border-radius: 4px;
+  position: absolute;
+  margin: 15px 0;
+}
+.battery:before {
+  content: "";
+  height: 3px;
+  width: 18px;
+  background: #333;
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: 25px;
+  border-radius: 4px 4px 0 0;
+}
+
+.battery-level {
+  background: red;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.battery-level-indicator-list {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+}
+
+.battery-level-indicator {
+  width: 100%;
+  background-color: purple;
+}
+/*END OF BATTERY*/
+
+.landing-phone-image {
+  width: 75%;
+}
+
+.landing-text-section {
+  width: 80%;
+  margin-bottom: 32px;
+}
+
+.landing-product-description-section {
+  margin-bottom: 384px;
+}
+
+.landing-subheader {
+  font-size: 18px;
+}
+
+.landing-text-container {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 320px;
+  margin-bottom: 720px;
+}
+
+.product-description-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.product-description-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 384px;
+}
+
+.product-description-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.product-description-text {
+  margin-left: 16px;
+  width: 50%;
+}
+
+.payment-description-text {
+  margin-left: 16px;
+  width: 50%;
+}
+
+.product-description-header {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.product-description-p {
+  font-size: 14px;
+}
+
+.landing-page-payment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 67.5%;
+  grid-row-gap: 32px;
+  margin-bottom: 32px;
+}
+
+.landing-page-payment-table-p {
+  justify-self: end;
+}
+
+.landing-page-payment-section-button {
+  margin-bottom: 512px;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
